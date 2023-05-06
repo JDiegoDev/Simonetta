@@ -1,7 +1,9 @@
-const ComingSoon = () => {
+const CommingSoon = () => {
     return (
-        <div>Simonetta Bistro Coming Soon !</div>
+        <div>
+            Simonetta Bistro Comming Soon !
+        </div>
     );
 };
 
-export default ComingSoon;
+export default CommingSoon;
