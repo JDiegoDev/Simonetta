@@ -1,0 +1,59 @@
+.coming-soon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Bitter', sans-serif;
+    font-weight: 200;
+
+    p {
+        font-size: 3.2rem;
+        animation-duration: 5s;
+        animation-name: bottom-to-top-text;
+    }
+
+    &__image-container {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        @media (max-width: 34em) {
+            width: 90%;
+            margin: 0 auto;
+            margin-right: 10px;
+        }
+    }
+
+    &__image {
+        width: 450px;
+        height: 300px;
+        margin-top: -50px;
+    }
+
+
+    h2 {
+        font-size: 4.2rem;
+        letter-spacing: 0.5px;
+    }
+
+    @media (max-width: 34em) {
+        max-height: 100vh;
+        overflow: hidden;
+    }
+}
+
+@keyframes bottom-to-top-text {
+    0% {
+      transform: translateY(200%);
+    }
+
+    100% {
+        transform: translateY(10%);
+    }
+    
+  }

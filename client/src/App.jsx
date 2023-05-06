@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import ComingSoon from './components/ComingSoon';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
