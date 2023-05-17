@@ -5,13 +5,16 @@ import Header from './components/Header';
 import Menu from './components/Menu';
 
 function App() {
+  // temporary validation until other components are done
+  const isComingSoonRoute = window.location.pathname === '/';
+
   return (
     <BrowserRouter>
       <div>
-        {/* <Header /> */}
+        {!isComingSoonRoute && <Header /> }
         <Routes>
-        <Route exact path="/" element={<ComingSoon />} />
-        <Route exact path="/menu" element={<Menu />} />
+          <Route exact path="/" element={<ComingSoon />} />
+          <Route exact path="/menu" element={<Menu />} />
         </Routes>
       </div>
     </BrowserRouter>
