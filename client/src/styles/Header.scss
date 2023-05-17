@@ -44,6 +44,12 @@
 
 @media only screen and (max-width: 600px) {
     .header {
+        height: 90px;
+
+        &__logo-image {
+            height: 6rem;
+        }
+
         &-list__menu-list ul { 
             display: none;
         }
@@ -52,7 +58,7 @@
             width: 100%;
             position: absolute;
             left: 0;
-            top: 100px;
+            top: 90px;
             background-color: #F8C1B7;
             display: flex;
             flex-direction: column;
