@@ -12,13 +12,14 @@ html {
     /* Precentage of the user's browser font-size setting */
     font-size: 62.5%;
     overflow-x: hidden;
+    font-family: 'Bitter', sans-serif;
+    font-weight: 300;
   
     /* Does NOT work on Safari */
     /* scroll-behavior: smooth; */
 }
 
 body {
-    background-color: #fff4f2;
     color: #555;
     line-height: 1;
     font-weight: 400;
