@@ -13,7 +13,7 @@ if(process.env.NODE_ENV === 'production') {
   })
 
   app.get('/testpdf', (req, res) => {
-    res.sendfile(path.join(__dirname, 'client/public/files', 'test.pdf'))
+    res.sendfile(path.join(__dirname, 'client/build/files/test.pdf'))
   })
 }
 
