@@ -19,8 +19,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/testpdf', (req, res) => {
-  console.log('nuevo 1', __dirname);
-  res.sendFile(__dirname + `/files/test.pdf`)
+  res.sendfile(path.join(__dirname, 'client/public/files', 'test.pdf'))
 })
 
 //Static file declaration
