@@ -11,10 +11,6 @@ if(process.env.NODE_ENV === 'production') {
   app.get('*', (req, res) => {
     res.sendfile(path.join(__dirname = 'client/build/index.html'));
   })
-
-  app.get('/testpdf', (req, res) => {
-    res.sendfile(path.join(__dirname, 'client/build/files/test.pdf'))
-  })
 }
 
 //build mode
@@ -22,11 +18,10 @@ app.get('/', (req, res) => {
   res.send({ home: '/' });
 })
 
-app.get('/testpdf', (req, res) => {
-  res.sendfile(path.join(__dirname, 'client/public/files', 'test.pdf'))
+app.get('/api/testpdf', (req, res) => {
+  res.sendFile(__dirname + '/files/test.pdf');
 })
 
-//Static file declaration
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 //start server
