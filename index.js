@@ -11,6 +11,10 @@ if(process.env.NODE_ENV === 'production') {
   app.get('*', (req, res) => {
     res.sendfile(path.join(__dirname = 'client/build/index.html'));
   })
+
+  app.get('/testpdf', (req, res) => {
+    res.sendfile(path.join(__dirname, 'client/public/files', 'test.pdf'))
+  })
 }
 
 //build mode
