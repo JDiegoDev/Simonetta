@@ -1,10 +1,8 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const fs = require('fs');
 const port = process.env.PORT || 5000;
-
-//Static file declaration
-app.use(express.static(path.join(__dirname, 'client/build')));
 
 //production mode
 if(process.env.NODE_ENV === 'production') {
@@ -19,6 +17,14 @@ if(process.env.NODE_ENV === 'production') {
 app.get('/', (req, res) => {
   res.send({ home: '/' });
 })
+
+app.get('/testpdf', (req, res) => {
+  console.log('nuevo 1', __dirname);
+  res.sendFile(__dirname + `/files/test.pdf`)
+})
+
+//Static file declaration
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 //start server
 app.listen(port, (req, res) => {
