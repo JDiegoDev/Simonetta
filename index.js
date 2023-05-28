@@ -4,6 +4,7 @@ const path = require('path');
 const fs = require('fs');
 const port = process.env.PORT || 5000;
 
+app.use(express.static(__dirname + '/public'));
 
 //production mode
 if(process.env.NODE_ENV === 'production') {
@@ -21,7 +22,6 @@ app.get('/', (req, res) => {
 
 
 app.use(express.static(path.join(__dirname, 'client/build')));
-app.use(express.static('public'));
 
 //start server
 app.listen(port, (req, res) => {
