@@ -19,7 +19,17 @@ app.get('/', (req, res) => {
 })
 
 app.get('/api/testpdf', (req, res) => {
-  res.sendFile(__dirname + '/files/test.pdf');
+  console.log('we got to the server!!  with: ', req.query);
+    const pdfFilepath = './files/test.pdf';
+    console.log('pdfFilepath', pdfFilepath);
+    const src = fs.createReadStream(pdfFilepath);
+
+    res.writeHead(200, {
+        'Content-Type': 'application/pdf',
+        'Content-Disposition': 'inline; filename=test.pdf'
+    });
+
+    src.pipe(res);
 })
 
 app.use(express.static(path.join(__dirname, 'client/build')));
