@@ -37,3 +37,25 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .meals-section {
+        &__meals-container {
+            gap: 20px;
+        }
+
+        &__meals-container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .meals-section {
+
+        &__meals-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
