@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import '../styles/Menu.scss';
 import classNames from "classnames";
-import { menuStates } from '../utils/MenuStates';
+import { mealsStates } from '../utils/Meals';
+import MealsSection from './MealsSection';
 
 const Menu = () => {
 
-    const [ selectedOption, setSelectedOption ] = useState(menuStates[0]);
+    const [ selectedOption, setSelectedOption ] = useState(mealsStates[0]);
     
     const clickedOption = value => setSelectedOption(value);
 
@@ -19,23 +20,31 @@ const Menu = () => {
                             <hr className='menu__container-options-divider'></hr>
                         </li>
                         {
-                            menuStates.map(menu => {
-                                const { label, value } = menu;
-                                return (
-                                    <li
-                                        className={classNames({
-                                            'menu__container-options-list--item': true,
-                                            'menu__container-options-list--selected': selectedOption.value === value, 
-                                        })}
-                                        key={value}
-                                        onClick={() => clickedOption(menu)}>
-                                        {label}
-                                    </li>
-                                );
+                            mealsStates.map(menu => {
+                                const { value, label } = menu;
+                                    return (
+                                        <li
+                                            className={classNames({
+                                                'menu__container-options-list--item': true,
+                                                'menu__container-options-list--selected': selectedOption.value === value, 
+                                            })}
+                                            key={value}
+                                            onClick={() => clickedOption(menu)}>
+                                            {label}
+                                        </li>
+                                    );
                             })
                         }
                     </ul>
                     <div className='menu__container-plates'>
+                        {
+                            mealsStates.map((menu) => {
+                                const { mealType } = menu;
+                                return <>
+                                    <MealsSection mealType={mealType} key={menu.value} />
+                                </>;
+                            })
+                        }
                     </div>
                 </div>
             </div>      
