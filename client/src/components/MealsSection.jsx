@@ -1,13 +1,16 @@
 import '../styles/MealsSection.scss';
 import { memo } from "react";
 import Meals from './Meals';
+import classNames from "classnames";
 
 
 const MealsSection = (props) => {
-    const { mealType } = props;
+    const { mealType, selectedOption, type } = props;
+    console.log('selectedOption', selectedOption);
+    console.log('tye', type);
 
     return (
-        <div className='meals-section'>
+        <div className={classNames('meals-section', {'meals-section__section--isActive': selectedOption.value === type})}>
             {
                 mealType.map(type => {
                     return (

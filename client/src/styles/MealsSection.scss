@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 100%;
     height: auto;
+    display: none;
 
     &__container {
         width: 100%;
@@ -21,6 +22,10 @@
         h5 {
             font-size: 1.5rem;
         }
+    }
+
+    &__section--isActive {
+        display: block;
     }
 }
 
