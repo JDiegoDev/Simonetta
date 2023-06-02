@@ -29,15 +29,6 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .meals-section {
-
-        &__meals-container {
-            grid-template-columns: repeat(1, 1fr);
-        }
-    }
-}
-
 
  @media only screen and (max-width: 1024px) {
     .meals-section {
@@ -58,5 +49,14 @@
             grid-template-columns: repeat(2, 1fr);
         }
     
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .meals-section {
+
+        &__meals-container {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 }
