@@ -349,9 +349,6 @@ export const mealsStates = [
         label: 'Cocktails & Drinks',
         value: 'cocktails',
         mealType: [
-            {
-                
-            }
         ],
     }
 ];
