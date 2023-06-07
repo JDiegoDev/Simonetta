@@ -6,8 +6,6 @@ import classNames from "classnames";
 
 const MealsSection = (props) => {
     const { mealType, selectedOption, type } = props;
-    console.log('selectedOption', selectedOption);
-    console.log('tye', type);
 
     return (
         <div className={classNames('meals-section', {'meals-section__section--isActive': selectedOption.value === type})}>

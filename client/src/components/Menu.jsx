@@ -7,7 +7,6 @@ import MealsSection from './MealsSection';
 const Menu = () => {
 
     const [ selectedOption, setSelectedOption ] = useState(mealsStates[0]);
-    console.log('mealsStates', mealsStates);
     
     const clickedOption = value => setSelectedOption(value);
 
