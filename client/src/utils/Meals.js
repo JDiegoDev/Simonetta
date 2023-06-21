@@ -349,6 +349,49 @@ export const mealsStates = [
         label: 'Cocktails & Drinks',
         value: 'cocktails',
         mealType: [
+            {
+                title: '',
+                value: 'cocktail-and-drinks',
+                meals: [
+                    {
+                        label: 'Sur Le Planche',
+                        value: 'sur-le-planche',
+                        detail: 'Cocktail de lychee, con vodka y prosseco con ligeras notas picantes.',
+                    },
+                    {
+                        label: 'Antitaxi Laughing ',
+                        value: 'antitaxi',
+                        detail: 'Basada en espíritus fuertes como mezcal y tequila con una explosión de sabores citricos.',
+                    },
+                    {
+                        label: 'Lucky Disconection',
+                        value: 'lucky-disconection',
+                        detail: 'Cocktelería basanda en un Gin Tonic, con sabor a moras y licor de hierbas.',
+                    },
+                    {
+                        label: 'Guayaba de Moscú',
+                        value: 'guava-moscow',
+                        detail: 'Un martini inspirado en una mula de moscu con variaciones sin perder su esencia. Gin.',
+                    },
+                    {
+                        label: 'Danzantes Packshot',
+                        value: 'danzantes',
+                        detail: 'Inspirado en una mezcalita de fresa, con carbón activado e infusión de lavanda',
+                    },{
+                        label: 'Mojito Paradigmas',
+                        value: 'mojito-paradigma',
+                        detail: 'Mojito con un delicioso ron infusionado con té demango de marruecos.',
+                    },{
+                        label: 'Ponche de la casa',
+                        value: 'ponche',
+                        detail: 'Nuestra versión de un ponche, adicionando licores como Controy, Apperol y Matusalem Clásico',
+                    },{
+                        label: 'Avocado Spicy',
+                        value: 'avocado-spicy',
+                        detail: 'Delicioso coctel con Mezcal Montelobos, licor ancho reyes, aguacate y clara de huevo sabor piña.',
+                    },
+                ]
+            },
         ],
     }
 ];
