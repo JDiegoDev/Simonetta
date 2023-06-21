@@ -32,6 +32,16 @@
         list-style: none;
         font-size: 1.8rem;
     }
+
+    &-list__menu-list ul a {
+        text-decoration: none;
+        color: #555;
+    }
+
+    &-list__menu-list .header-list__option-isActive {
+        color: #f3a799;
+        font-weight: bold;
+    }
     
     &-list__menu-list li:hover {
         color: #f3a799;

@@ -2,9 +2,19 @@ import '../styles/Header.scss';
 import classNames from "classnames";
 import SimonettaLogo from '../images/logorect.png';
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
     const [ showList, setShowList ] = useState(false);
+    const { pathname } = useLocation();
+    const isOptionActive = false;
+    const optionActive = {
+        menu: pathname === '/menu' ? true : false,
+        aboutus: pathname === '/aboutus' ? true : false,
+        contact: pathname === '/contact' ? true : false
+    };
+
+    console.log('optionActive', optionActive);
     const styles = classNames('header-list__menu-list', { 'header-list__menu-list--responsive': showList });
 
     return (
@@ -16,9 +26,9 @@ const Header = () => {
                 <div className='header-list-container'>
                     <div className={styles}>
                         <ul>
-                            <li>Menú</li>
-                            <li>Nosotros</li>
-                            <li>Contacto</li>
+                            <Link to="/menu" className={classNames({'header-list__option-isActive': optionActive.menu })}>Menú</Link>
+                            <Link to="/aboutus" className={classNames({'header-list__option-isActive': optionActive.aboutus })}>Nosotros</Link>
+                            <Link to="/contact" className={classNames({'header-list__option-isActive': optionActive.contact })}>Contacto</Link>
                         </ul>
                     </div>
                     <div className="header-container__icon" onClick={() => setShowList(!showList)}>
