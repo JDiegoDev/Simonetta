@@ -7,14 +7,12 @@ import { Link, useLocation } from "react-router-dom";
 const Header = () => {
     const [ showList, setShowList ] = useState(false);
     const { pathname } = useLocation();
-    const isOptionActive = false;
     const optionActive = {
         menu: pathname === '/menu' ? true : false,
         aboutus: pathname === '/aboutus' ? true : false,
         contact: pathname === '/contact' ? true : false
     };
 
-    console.log('optionActive', optionActive);
     const styles = classNames('header-list__menu-list', { 'header-list__menu-list--responsive': showList });
 
     return (
