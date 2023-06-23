@@ -3,6 +3,7 @@ import ComingSoon from './components/ComingSoon';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from './components/Header';
 import Menu from './components/Menu';
+import Home from './components/Home';
 
 function App() {
   // temporary validation until other components are done
@@ -11,9 +12,9 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        {!isComingSoonRoute && <Header /> }
+        <Header /> 
         <Routes>
-          <Route exact path="/" element={<ComingSoon />} />
+          <Route exact path="/" element={<Home />} />
           <Route exact path="/menu" element={<Menu />} />
         </Routes>
       </div>

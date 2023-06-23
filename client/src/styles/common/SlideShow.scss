@@ -1,0 +1,10 @@
+.slide-show {
+    &__slides {
+        display: none;
+    }
+
+    &__image {
+        object-fit: cover;
+        max-width: 100%;
+    }
+}
