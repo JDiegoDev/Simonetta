@@ -24,7 +24,7 @@ const Header = () => {
                 </div>
                 <div className='header-list-container'>
                     <div className={styles}>
-                        <ul>
+                        <ul onClick={() => setShowList(false)}>
                             <Link to="/" className={classNames({'header-list__option-isActive': optionActive.home })}>Inicio</Link>
                             <Link to="/menu" className={classNames({'header-list__option-isActive': optionActive.menu })}>Menú</Link>
                             <Link to="/aboutus" className={classNames({'header-list__option-isActive': optionActive.aboutus })}>Nosotros</Link>
