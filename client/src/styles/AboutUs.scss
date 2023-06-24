@@ -74,6 +74,7 @@
         }
 
         &__legend-container {
+            margin-top: 0;
             grid-column: 5 / 8;
         }
     }
@@ -87,6 +88,10 @@
             flex-direction: column;
             width: 100%;
             height: calc(100vh - 100px);
+        }
+
+        &__legend-container {
+            margin-top: 0;
         }
     }
 }
