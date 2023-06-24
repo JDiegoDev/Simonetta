@@ -1,14 +1,10 @@
 import './App.scss';
-import ComingSoon from './components/ComingSoon';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from './components/Header';
-import Menu from './components/Menu';
-import Home from './components/Home';
+import Menu from './pages/Menu';
+import Home from './pages/Home';
 
 function App() {
-  // temporary validation until other components are done
-  const isComingSoonRoute = window.location.pathname === '/';
-
   return (
     <BrowserRouter>
       <div>

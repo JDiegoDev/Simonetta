@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../styles/Menu.scss';
 import classNames from "classnames";
 import { mealsStates } from '../utils/Meals';
-import MealsSection from './MealsSection';
+import MealsSection from '../components/MealsSection';
 
 const Menu = () => {
 

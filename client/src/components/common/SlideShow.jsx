@@ -39,7 +39,7 @@ const SlideShow = props => {
         <div className='slide-show__container'>
             { imageData && imageData.map((img, index) => {
                     return (
-                        <div className='slide-show__slides' key={img.alt} ref={ref => { inputEl.current[index] = ref }}>
+                        <div className='slide-show__slides slide-show__slides--fade' key={img.alt} ref={ref => { inputEl.current[index] = ref }}>
                             <img className='slide-show__image' alt={img.alt} src={img.src}></img>
                         </div>
                     )
