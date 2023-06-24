@@ -20,7 +20,9 @@ const Header = () => {
         <div className="header">
             <div className="header__header-container">
                 <div className='header-logo'>
-                 <img src={SimonettaLogo} alt='Simonetta-Logo' className='header__logo-image'></img>
+                        <Link to='/'>
+                            <img src={SimonettaLogo} alt='Simonetta-Logo' className='header__logo-image'></img>
+                        </Link>
                 </div>
                 <div className='header-list-container'>
                     <div className={styles}>
