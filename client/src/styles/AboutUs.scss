@@ -105,10 +105,10 @@
             height: calc(100vh - 100px);
         }
 
-        &__image-container {
+        &__image-container {    
             img {
                 width: 100%;
-                height: calc(100vh - 500px);
+                height: 100%;
             }
         }
 
