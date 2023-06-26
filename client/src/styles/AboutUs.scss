@@ -103,6 +103,14 @@
             flex-direction: column;
             width: 100%;
             height: calc(100vh - 100px);
+            border: 1px solid red;
+        }
+
+        &__image-container {
+            img {
+                width: 100%;
+                height: calc(100vh - 600px);
+            }
         }
 
         &__title {
@@ -114,25 +122,3 @@
         }
     }
 }
-
-@media only screen 
-    and (device-width: 390px) 
-    and (device-height: 844px) 
-    and (-webkit-device-pixel-ratio: 3) {
-        .about-us  {
-            &__container {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                height: calc(100vh - 100px);
-            }
-    
-            &__title {
-                font-size: 25px;
-            }
-    
-            &__description {
-                font-size: 16px;
-            }
-        }
-    }
