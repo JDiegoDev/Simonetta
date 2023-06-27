@@ -1,7 +1,6 @@
 .contact {
-    font-family: 'Bitter', sans-serif;
-    
     &__container {
+        font-family: 'Bitter', sans-serif;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         height: calc(100vh - 100px);
@@ -134,7 +133,7 @@
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 780px) {
     .contact {
         &__container {
             display: flex;
@@ -166,7 +165,18 @@
         &__form {
             &-button {
                 justify-content: start;
-                margin-left: 35px;
+                margin-left: 65px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contact {
+        &__form {
+            &-button {
+                justify-content: start;
+                margin-left: 30px;
             }
         }
     }
