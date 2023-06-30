@@ -7,6 +7,13 @@
         padding: 4em 30px;
     }
 
+    &__container-language {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        height: auto;
+    }
+
     &__container-options {
         display: flex;
         flex-direction: row;
@@ -69,6 +76,12 @@
         &__container-options {
             flex-direction: column;
         }
+
+        &__container-language {
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
 
         &__container-options-list {
             margin-top: 0;

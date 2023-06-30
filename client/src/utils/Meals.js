@@ -138,7 +138,7 @@ export const mealsStates = [
                 value: 'starters',
                 meals: [
                     {
-                        label: 'Oyters',
+                        label: 'Oysters',
                         value: 'oysters',
                         detail: '6 piezas de ostion fresco en su concha, acompañado de rasurado de la casa y salsa negra de haberno.',
                     },
@@ -232,7 +232,7 @@ export const mealsStates = [
                         detail: 'Con Salsa especial de Sriracha no picante, en cama de puré de papa chipotle, pepita tostada, ceniza de tortilla y arugula baby.',
                     },
                     {
-                        label: 'Pesca del día',
+                        label: 'Pesca Especial',
                         value: 'fish',
                         detail: 'Sobre cama de endivias bañadas en esquisita salsa meuniere con ralladura de limo, echalotte y alcaparras.',
                     },
