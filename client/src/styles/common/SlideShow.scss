@@ -11,5 +11,15 @@
     &__image {
         object-fit: cover;
         max-width: 100%;
+        height: calc(100vh - 100px);
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .slide-show {
+        &__image {
+            width: 100%;
+            height: calc(100vh - 100px);
+        }
     }
 }
