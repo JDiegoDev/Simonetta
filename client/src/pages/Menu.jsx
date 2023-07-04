@@ -16,7 +16,6 @@ const Menu = () => {
 
     const mealsData = !isEnglishMenu ?  mealsStates : englishMealsStates;
     const listLabel = !isEnglishMenu ? 'Menú' : 'Menu';
-    console.log('isEnglishMenu', isEnglishMenu);
 
     return (
         <div className='menu'>
