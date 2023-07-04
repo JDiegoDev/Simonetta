@@ -11,8 +11,10 @@
 
     &__title {
         font-size: 2.5rem;
-        color: rgb(34, 34, 34);
+        color: #f3a799;
         letter-spacing: 2.5px;
+        text-transform: uppercase;
+        margin-bottom: 35px;
     }
 
     &__meals-container {
