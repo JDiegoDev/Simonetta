@@ -245,7 +245,6 @@ export const englishMealsStates = [
                     {
                         label: 'Grilled Chicken',
                         value: 'organic-chicken',
-                        detail: 'Pechuga de pollo organica, sobre un espejo de cremoso balsamico, acompañado de zanahoria y papa romero, quenelle de jocoque de semillas-',
                         detail: 'Grilled chicken on top of balsamic cream, served with carrots and cambray potatos.'
                     },
                     {
@@ -340,6 +339,38 @@ export const englishMealsStates = [
                         detail: 'Kentucky style fried chicken served with belgian waflles and house maple syrup',
                     },
 
+                ]
+            }
+        ],
+    },
+    {
+        label: 'Desserts',
+        value: 'dessert',
+        mealType: [
+            {
+                title: '',
+                value: 'dessert-list',
+                meals: [
+                    {
+                        label: 'Churros',
+                        value: 'churros',
+                        detail: 'Home made churros acompanied with nutella and caramel spread.'
+                    },
+                    {
+                        label: 'Lemon Pie',
+                        value: 'pie',
+                        detail: 'Lemon pie with crumbel and lemon zest.',
+                    },
+                    {
+                        label: 'Mango Cheescake',
+                        value: 'cheescake',
+                        detail: 'Creamy mango cheescake with cardamon.',
+                    },
+                    {
+                        label: 'Apple Strudel',
+                        value: 'strudel',
+                        detail: 'Apple strudel acompanied with vanilla ice cream.'
+                    },
                 ]
             }
         ],

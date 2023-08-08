@@ -343,7 +343,34 @@ export const mealsStates = [
     {
         label: 'Postres',
         value: 'dessert',
-        mealType: [],
+        mealType: [
+            {
+                title: '',
+                value: 'dessert-list',
+                meals: [
+                    {
+                        label: 'Churros',
+                        value: 'churros',
+                        detail: 'Churros hechos en casa acompañados de nutella y cajeta.',
+                    },
+                    {
+                        label: 'Pie de Limon',
+                        value: 'pie',
+                        detail: 'Pie de limon con crumble y rayadura de limon',
+                    },
+                    {
+                        label: 'Cheesckake de Mango',
+                        value: 'cheescake',
+                        detail: 'Cremoso cheesckake de mango con cardamomo',
+                    },
+                    {
+                        label: 'Strudel de Manzana',
+                        value: 'strudel',
+                        detail: 'Strudel de Manzana acompañado con helado de vainilla.',
+                    },
+                ]
+            }
+        ],
     },
     {
         label: 'Cocktails & Drinks',
