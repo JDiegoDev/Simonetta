@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const fs = require('fs');
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5001;
 
 app.use(express.static(__dirname + '/public'));
 
@@ -17,7 +17,11 @@ if(process.env.NODE_ENV === 'production') {
 
 //build mode
 app.get('/', (req, res) => {
-  res.send({ home: '/' });
+  if (process.env.NODE_ENV != 'development' && !request.secure) {
+    return response.redirect("https://" + request.headers.host + request.url);
+ }
+ 
+ res.send('/');
 })
 
 
