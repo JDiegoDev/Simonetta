@@ -18,7 +18,8 @@ if(process.env.NODE_ENV === 'production') {
 
 //build mode
 app.get('/', (req, res) => {
-  if (process.env.NODE_ENV === 'production') {
+  console.log('process.env.NODE_ENV', process.env.NODE_ENV);
+  //if (process.env.NODE_ENV === 'production') {
     //return res.redirect("https://" + req.headers.host + req.url);
     const target = url.format({
       protocol: 'https:',
@@ -27,7 +28,7 @@ app.get('/', (req, res) => {
     })
   
     res.redirect(301, target)
- }
+ //}
  
  res.send('/');
 })
