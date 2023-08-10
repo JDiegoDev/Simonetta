@@ -8,12 +8,11 @@ app.use(express.static(__dirname + '/public'));
 
 //production mode
 if(process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, 'client/build')));
+  //app.use(express.static(path.join(__dirname, 'client/build')));
 
   app.use(function(request, response, next) {
-    if (process.env.NODE_ENV != 'development' && !request.secure) {
-       return response.redirect("https://" + request.headers.host + request.url);
-    }
+    
+    return response.redirect("https://" + request.headers.host + request.url);
     next();
   });
   
