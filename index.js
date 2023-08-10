@@ -3,13 +3,20 @@ const app = express();
 const path = require('path');
 const fs = require('fs');
 const port = process.env.PORT || 5000;
-const url = require('url');
 
 app.use(express.static(__dirname + '/public'));
 
 //production mode
 if(process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, 'client/build')));
+
+  app.use(function(request, response, next) {
+    if (process.env.NODE_ENV != 'development' && !request.secure) {
+       return response.redirect("https://" + request.headers.host + request.url);
+    }
+    next();
+  });
+  
   //
   app.get('*', (req, res) => {
     res.sendfile(path.join(__dirname = 'client/build/index.html'));
@@ -18,19 +25,7 @@ if(process.env.NODE_ENV === 'production') {
 
 //build mode
 app.get('/', (req, res) => {
-  console.log('process.env.NODE_ENV', process.env.NODE_ENV);
-  //if (process.env.NODE_ENV === 'production') {
-    //return res.redirect("https://" + req.headers.host + req.url);
-    const target = url.format({
-      protocol: 'https:',
-      host: req.get('Host'),
-      pathname: req.url
-    })
-  
-    res.redirect(301, target)
- //}
- 
- //res.send('/');
+  res.send({ home: '/' });
 })
 
 
