@@ -8,14 +8,7 @@ app.use(express.static(__dirname + '/public'));
 
 //production mode
 if(process.env.NODE_ENV === 'production') {
-  //app.use(express.static(path.join(__dirname, 'client/build')));
-
-  app.use(function(request, response, next) {
-    
-    return response.redirect("https://" + request.headers.host + request.url);
-    next();
-  });
-  
+  app.use(express.static(path.join(__dirname, 'client/build')));
   //
   app.get('*', (req, res) => {
     res.sendfile(path.join(__dirname = 'client/build/index.html'));
