@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
     res.redirect(301, target)
  //}
  
- res.send('/');
+ //res.send('/');
 })
 
 
