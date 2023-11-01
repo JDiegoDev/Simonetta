@@ -13,11 +13,6 @@ export const mealsStates = [
                         detail: 'Bowl de yogurt griego, frutos rojos y crumble de vainilla hecho en casa.',
                     },
                     {
-                        label: 'Parfait de Manzana Chia',
-                        value: 'parfait',
-                        detail: 'Pudin de chia en leche de almendras, cubos de manzana caramelizada, queso cottage y granola.',
-                    },
-                    {
                         label: 'Acai Bowl',
                         value: 'acai',
                         detail: 'Base de fruta de acai con toppings de platano, fresa, mango, cacao nibs y coco rallado.',
@@ -25,7 +20,7 @@ export const mealsStates = [
                     {
                         label: 'French Toast',
                         value: 'pancakes',
-                        detail: 'Esponjoso pan brioche sellao en mix de la casa, bañado de coulis de frutos rojos, crema batida y crumble de vainilla',
+                        detail: 'Esponjoso pan brioche sellado en mix de la casa, bañado de coulis de frutos rojos, crema batida y crumble de vainilla',
                     },
                     {
                         label: 'Fluffy Pancakes',
@@ -81,6 +76,11 @@ export const mealsStates = [
                     },
                     {
                         label: 'Huevos Cazuela',
+                        value: 'cazuela',
+                        detail: 'Ponchados o revueltos, ahogados en salsa de tomate y acompañados de papa a la mamtequilla con crema y gratin de queso manchego.',
+                    },
+                    {
+                        label: 'Bowl Especial Simone',
                         value: 'Bowl Especial Simone',
                         detail: 'Bowl con huevo revuelto, papa cambray, tocino, salchicha italiana, queso cheddar, cebollin y cebolla caramelizada con un toque de salsa de tomate.',
                     },
@@ -111,7 +111,7 @@ export const mealsStates = [
                         detail: 'Tradicionales chilaquiles con pollo rojos o verdes, queso gratinado, crema y cebollitas encurtidas.',
                     },
                     {
-                        label: 'huevos al gusto',
+                        label: 'Huevos al gusto',
                         value: 'egg-choice',
                         detail: 'Acompañados de papas cambray y frijoles.',
                     },
@@ -124,6 +124,11 @@ export const mealsStates = [
                         label: 'Molletes',
                         value: 'molletes',
                         detail: 'Pan chapata con frijol refrito, queso manchego derretido y proteina a elegir.',
+                    },
+                    {
+                        label: 'Croissant',
+                        value: 'croissant',
+                        detail: 'Croissan relleno de grouyer, jamon de pavo, cebolla, jitomate, agucate, lechuga y salsa tartara.',
                     },
                 ]
             }
@@ -138,9 +143,9 @@ export const mealsStates = [
                 value: 'starters',
                 meals: [
                     {
-                        label: 'Oysters',
-                        value: 'oysters',
-                        detail: '6 piezas de ostion fresco en su concha, acompañado de rasurado de la casa y salsa negra de haberno.',
+                        label: 'Burrata Margarita',
+                        value: 'burrata',
+                        detail: 'Burrata con laminas de jitomate bola, pesto pistache y albahaca.',
                     },
                     {
                         label: 'Coliflor Rostizada',
@@ -161,6 +166,16 @@ export const mealsStates = [
                         label: 'Carpaccio de Betabel',
                         value: 'carpaccio',
                         detail: 'Betabel con reducción de vino tinto, mayo, ceniza trufada, parmesano, arugula baby y pistache.',
+                    },
+                    {
+                        label: 'Boltias de queso',
+                        value: 'bolitas-queso',
+                        detail: 'Bolitas de queso parmesano y manchego, acompañadas de salsa tartara hecha en casa.',
+                    },
+                    {
+                        label: 'Aguachile de Camaron',
+                        value: 'aguachile',
+                        detail: 'Fileteados con limon, habanero, pepino persa, cebolla morada, manzana, aguacate, aceite verde y un toque de de cilantro.',
                     }
                 ]
             },
@@ -174,9 +189,9 @@ export const mealsStates = [
                         detail: 'Con lluvia de crema y jitomate rostizado.',
                     },
                     {
-                        label: 'Crema de Alacachofa',
-                        value: 'artichoke-soup',
-                        detail: 'Hecha con receta tradicional, acompañada de croutones al ajo.',
+                        label: 'Sopa de Cebolla',
+                        value: 'onion-soup',
+                        detail: 'Tradicional sopa de cebolla con queso grouyere y croutones de ajo.',
                     }
                 ]
             },
@@ -195,15 +210,15 @@ export const mealsStates = [
                         detail: 'Laminas de Lechuga, parmesano, crutones y aderezo cesar hecho en casa.',
                     },
                     {
+                        label: 'Burrata',
+                        value: 'burrata',
+                        detail: 'Arugula baby, aderezo balsamico trufado, ate de guayaba y pistache tostado.',
+                    },
+                    {
                         label: 'Griega',
                         value: 'greek-salad',
                         detail: 'Mix de lechugas con espinaca baby, vinagreta de balsamico, pepino persa, queso feta, alcaparras asadas, jitomate, aceituna negra y cebolla morada.',
                     },
-                    {
-                        label: 'Burrata',
-                        value: 'burrata',
-                        detail: 'Arugula baby, aderezo balsamico trufado, ate de guayaba y pistache tostado.',
-                    }
                 ]
             },
             {
@@ -219,6 +234,21 @@ export const mealsStates = [
                         label: 'Parpadelle de Short Rib',
                         value: 'parpadelle',
                         detail: 'Pasta al dente con short rib en salsa roja de vodka cocinada por 8+hrs.',
+                    },
+                    {
+                        label: 'Fusilli al Pesto con Camarones',
+                        value: 'fusilli-pesto',
+                        detail: 'Fusilli con pesto cremoso, jitomate cherry confitado, camarones y queso parmesano.',
+                    },
+                    {
+                        label: 'Carbonara',
+                        value: 'carbonara',
+                        detail: 'Tradicional pasta carbonara con panceta y queso parmesano.',
+                    },
+                    {
+                        label: 'Rigatonni Ragu',
+                        value: 'ragu',
+                        detail: 'Rigatonni al burro con ragu de res, gratin de parmesano y perejil.',
                     },
                 ]
             },
@@ -261,6 +291,11 @@ export const mealsStates = [
                         value: 'shrimps',
                         detail: 'Tempurizados y bañados en salsa especial de mayo miel, sriracha puestos en cama de lechuga francesa y ajonjoli negro.',
                     },
+                    {
+                        label: 'Tacos Baja',
+                        value: 'baja-tacos',
+                        detail: 'Tacos de Pescado rebosado en tortilla de harina con cebolla morada encurtida, aguacate y lechuga francesa.',
+                    },
                 ]
             },
             {
@@ -299,14 +334,19 @@ export const mealsStates = [
                         detail: 'Receta tradicional con queso cheddar, lechuga, cebolla morada, jitomate y papas a la francesa.',
                     },
                     {
-                        label: 'Ceasar Salad Sandwich',
-                        value: 'ceasar-salad-sandwich',
-                        detail: 'Pan chapata, mix de lechugas, pechuga en cubos, y parmesano aderezado con cesar hecho en casa.',
+                        label: 'Bacon Burger',
+                        value: 'bacon-bruger',
+                        detail: 'Carne de Res, queso grouyere, cebolla caramelizada, tocino, y papas a la francesa.',
                     },
                     {
                         label: 'Grilled Cheese Sandwich',
                         value: 'grilled-cheese-sandwich',
                         detail: 'Sandwich de pan de masa madre relleno de cheddar, queso manchego y grouyere derretidos acompañado de sopa de toamte para choppear.',
+                    },
+                    {
+                        label: 'Tuna Melt',
+                        value: 'tuna-melt',
+                        detail: 'Pan brioche aderezado con receta especial, mayo chipotle, cebolla, cilantro, hierbabuena y queso cheddar.',
                     },
                 ]
             }
@@ -349,11 +389,6 @@ export const mealsStates = [
                 value: 'dessert-list',
                 meals: [
                     {
-                        label: 'Churros',
-                        value: 'churros',
-                        detail: 'Churros hechos en casa acompañados de nutella y cajeta.',
-                    },
-                    {
                         label: 'Pie de Limon',
                         value: 'pie',
                         detail: 'Pie de limon con crumble y rayadura de limon',
@@ -367,6 +402,11 @@ export const mealsStates = [
                         label: 'Strudel de Manzana',
                         value: 'strudel',
                         detail: 'Strudel de Manzana acompañado con helado de vainilla.',
+                    },
+                    {
+                        label: 'Galleta especial',
+                        value: 'cookie',
+                        detail: 'Galleta al sarten hecha en casa acompañada de M&M, helado de vainila, fresa, blueberry y nuez caramelizada.',
                     },
                 ]
             }

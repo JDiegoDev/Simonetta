@@ -13,11 +13,6 @@ export const englishMealsStates = [
                         detail: 'Greek yogurt bowl with berries and vanilla crumble',
                     },
                     {
-                        label: 'Apple Chia Parfait',
-                        value: 'parfait',
-                        detail: 'Chia pudding with almond milk, caramelized apple, cottage cheese and granola',
-                    },
-                    {
                         label: 'Acai Bowl',
                         value: 'acai',
                         detail: 'Acai sorbet topped with banana, strawberry, mango, cocoa nibs and grated coconut',
@@ -30,7 +25,7 @@ export const englishMealsStates = [
                     {
                         label: 'Fluffy Pancakes',
                         value: 'fluffy',
-                        detail: 'Super fluffy pancakes topped with berries coulis , pistachio, maple syrup, and whipped cream',
+                        detail: 'Fluffy pancakes topped with berries coulis , pistachio, maple syrup, and whipped cream compannied with bacon.',
                     },
                 ]
             }, 
@@ -41,7 +36,7 @@ export const englishMealsStates = [
                     {
                         label: 'Avo Toast',
                         value: 'avotoast',
-                        detail: 'Sourdough bread, candied tomatos, baby arugula and poached eggs. ',
+                        detail: 'Sourdough bread, candied tomatoes, baby arugula and poached eggs. ',
                     },
                     {
                         label: 'Salmon Bagel',
@@ -51,22 +46,22 @@ export const englishMealsStates = [
                     {
                         label: 'Croque Madame/Monsieur',
                         value: 'croque',
-                        detail: 'Brioche bread layers with ham, grouyere cheese, served with mornay sauce. Choose beetween egg or bacon.',
+                        detail: 'Brioche bread layers with ham, gruyere cheese, served with mornay sauce. Choose beetween egg or bacon.',
                     },
                     {
                         label: 'American Brioche',
                         value: 'american-brioche',
-                        detail: 'Brioche bread sandwich, scrambled eggs, caramelized onions, cheedar cheese, bacon and fresh chives.',
+                        detail: 'Brioche bun sandwich, scrambled eggs, caramelized onions, cheedar cheese, bacon and fresh chives.',
                     },
                     {
                         label: 'Healthy Omellete',
                         value: 'omelette',
-                        detail: 'Omellete stuffed with mushrooms, spinach and onions served with grilled asparagus bathed in green sauce.',
+                        detail: 'Omellete stuffed with mushrooms, bell peppers, spinach and onions served with grilled asparagus bathed in green sauce.',
                     },
                     {
                         label: 'Steak & Eggs',
                         value: 'steak-&-eggs',
-                        detail: 'Rib eye served with two sunny side up eggs and home made cambray potatos.',
+                        detail: 'Juicy steak served with two sunny side up eggs and home made cambray potatos.',
                     }
                 ]
             }, 
@@ -80,19 +75,24 @@ export const englishMealsStates = [
                         detail: 'Omellete stuffed with green sauce chilaquiles, sour cream, bathed with mornay cheese sacue',
                     },
                     {
-                        label: 'Cazuela Eggs',
+                        label: 'Casserole Eggs',
                         value: 'Bowl Especial Simone',
-                        detail: 'Poached o scrambled  eggs, bathed with special red sauce served with buttery potatoes, sour cream and manchego cheese  ',
+                        detail: 'Poached o scrambled  eggs, bathed with special red sauce served with buttery potatoes, sour cream and manchego cheese.',
+                    },
+                    {
+                        label: 'Special Bowl Simonne',
+                        value: 'simone-bowl',
+                        detail: 'Bowl served with scrambled eggs, baby potatoes, bacon italian sausage, caramelized onions with a touch of tomato sauce, cheddar cheese and chives.',
                     },
                     {
                         label: 'Chicken & Waffles',
                         value: 'chicken-&-waffles',
-                        detail: 'Kentucky style fried chicken served with belgian waflles and house maple syrup',
+                        detail: 'Kentucky style fried chicken served with belgian waflles and house made maple syrup.',
                     },
                     {
                         label: 'Benedicts',
                         value: 'benedicts',
-                        detail: 'Poached eggs on top on brioche bread served with canadian bacon or salmon bathed in hollandaise sauce.',
+                        detail: 'Poached eggs on top on brioche bread served with salmon or salami with hollandaise sauce.',
                     },
                 ]
             },
@@ -101,9 +101,9 @@ export const englishMealsStates = [
                 value: 'others',
                 meals: [
                     {
-                        label: 'Enchiladas Suizas',
+                        label: 'Habanero Swiss Enchiladas',
                         value: 'enchiladas',
-                        detail: 'Shredded chicken Enchiladas bathed in home made swiss habanero sauce topped with melted cheese, sour cream and pickled onion.',
+                        detail: 'Shredded chicken Enchiladas bathed in mild habanero swiss sauce topped with melted cheese, sour cream and pickled onions.',
                     },
                     {
                         label: 'Chilaquiles',
@@ -118,12 +118,17 @@ export const englishMealsStates = [
                     {
                         label: 'Grilled cheese sandwich',
                         value: 'grilled-cheese',
-                        detail: 'Sourdough bread stuffed with cheedar cheese, manchego cheese, grouyere cheese, served with tomato soup to chop.',
+                        detail: 'Sourdough bread stuffed with cheedar cheese, manchego cheese, gruyere cheese, served with tomato soup to chop.',
                     },
                     {
                         label: 'Molletes',
                         value: 'molletes',
-                        detail: 'Ciabatta bread with beans, melted manchego cheese and protein of your choise. Chorizo, ham or tocino.',
+                        detail: 'Ciabatta bread with beans, melted manchego cheese and protein of your choise. Chorizo, ham or bacon.',
+                    },
+                    {
+                        label: 'Croissant',
+                        value: 'croissant',
+                        detail: 'Corissant filled with gruyere cheese, turkey ham, onion, tomato, avocado, lettuce and tartar cheese.',
                     },
                 ]
             }
@@ -138,9 +143,9 @@ export const englishMealsStates = [
                 value: 'starters',
                 meals: [
                     {
-                        label: 'Oytsers',
-                        value: 'oysters',
-                        detail: '6 pieces of fresh oysters on the shell , served with house made sauce and black habanero sacue.',
+                        label: 'Burrata Margarita',
+                        value: 'burrata-margarita',
+                        detail: 'Burrata cheese with slices of tomato, pistachio pesto and basil.',
                     },
                     {
                         label: 'Rousted Cauliflower',
@@ -155,12 +160,22 @@ export const englishMealsStates = [
                     {
                         label: 'Tuna Tower',
                         value: 'tuna-tower',
-                        detail: 'Avocado, mango and tuna mix marinated in ponzu sauce, cucumber, pistachio, kabayaki sacue topped with fried leeks.'
+                        detail: 'A mix of avocado, mango and fresh cubed tuna, marinated in ponzu, cucumber, pistachio, sweet and sour sauce with fried scallions and touch of chipotle mayo.'
                     },
                     {
                         label: 'Beetroot Carpaccio',
                         value: 'carpaccio',
-                        detail : 'Beetroot with red wine reduction, truffle mayo, parmensan cheese slice, baby aurugula and pitachio.'
+                        detail : 'Thinly sliceed beets with red wine reduction, truffled mayo, parmesan cheese, baby arugula and pistachios.'
+                    },
+                    {
+                        label: 'Cheese Balls',
+                        value: 'chesse-balls',
+                        detail : 'Parmesan and manchego cheese balls served with house-made tartar sauce.'
+                    },
+                    {
+                        label: 'Shrimp Aguachile',
+                        value: 'aguachile',
+                        detail : 'Sliced shrimp with lime, habanero, cucumber, red onion, apple, avocado, green oil and touch of cilantro.'
                     }
                 ]
             },
@@ -176,18 +191,18 @@ export const englishMealsStates = [
                     {
                         label: 'Onion soup',
                         value: 'onion-soup',
-                        detail: 'The traditional onion soup recipe.',
+                        detail: 'The traditional onion soup recipe with gruyere cheese and croutons.',
                     }
                 ]
             },
             {
                 title: 'Salads',
-                value: 'saladas',
+                value: 'salads',
                 meals: [
                     {
                         label: 'Simonetta',
                         value: 'simonetta-salad',
-                        detail: 'Lettucce mix, acompanied with tangerine, goat cheese, caramelized nuts served with honey mustard dressing.'
+                        detail: 'Mixed greens, companied with tangerine, goat cheese, tomato, caramelized nuts served with honey mustard dressing.'
                     },
                     {
                         label: 'Caesar Salad',
@@ -195,15 +210,15 @@ export const englishMealsStates = [
                         detail: 'Romain lettuce, parmesan cheese, croutons and house made classic caesar dessing.'
                     },
                     {
-                        label: 'Greek Salad',
-                        value: 'greek-salad',
-                        detail: 'Lettuce Mix, spinach, balsamic vinaigrette, cucumber, feta cheese, grilled capers, tomato topped with black olives and purple onions. '
-                    },
-                    {
                         label: 'Burrata',
                         value: 'burrata',
-                        detail: 'Baby arugula, truffed balsamic dressing, guava paste and toasted pistachio.'
-                    }
+                        detail: 'Baby arugula, truffle balsamic dressing, guava paste and toasted pistachio.'
+                    },
+                    {
+                        label: 'Greek Salad',
+                        value: 'greek-salad',
+                        detail: 'Mixed greens, tzatziki sauce, cucumber, feta cheese, grilled capers, tomato, topped with black olives and purple onions. '
+                    },
                 ]
             },
             {
@@ -213,12 +228,27 @@ export const englishMealsStates = [
                     {
                         label: 'Truffle Fetuccini',
                         value: 'fetuccini',
-                        detail: 'Fetuccini pasta with cheese cream and parmesan.'
+                        detail: 'Fetuccini in truffle with cheese cream and parmesan.'
                     },
                     {
                         label: 'Short Rib Parpadelle',
                         value: 'parpadelle',
-                        detail: 'Parpadelle pasta served with shredded short rib cooked in vodka sauce.'
+                        detail: 'Al dente Parpadelle served with shredded short rib cooked in vodka sauce.'
+                    },
+                    {
+                        label: 'Fusilli Pesto with Shrimp',
+                        value: 'pesto',
+                        detail: 'Creamy fusilli pesto companied with cherry tomatoes, shrimp and parmesan cheese.'
+                    },
+                    {
+                        label: 'Carbonara',
+                        value: 'carbonara',
+                        detail: 'Traditional carbonara with pancetta and parmesan cheese.'
+                    },
+                    {
+                        label: 'Rigatonni Ragu',
+                        value: 'ragu',
+                        detail: 'Buttered rigatoni with beef ragu, parmesan cheese gratin and parsley.'
                     },
                 ]
             },
@@ -229,39 +259,42 @@ export const englishMealsStates = [
                     {
                         label: 'Roasted Octupus',
                         value: 'octupus',
-                        detail: 'Con Salsa especial de Sriracha no picante, en cama de puré de papa chipotle, pepita tostada, ceniza de tortilla y arugula baby.',
-                        detail: 'Served with non spicy Sriracha, on top of chipotle mash potato mix, topped with tortillas bites and arugula baby'
+                        detail: 'Marinated in puree, baby arugula, cherry tomatoes, served with Mediterranean lemon.'
                     },
                     {
-                        label: 'Pesca ',
+                        label: 'Catch of the day',
                         value: 'fish',
-                        detail: 'Fish on top of endive bathed with meuniere sauce, lemon zest, shallot and capers'
+                        detail: 'Dorado Fish with amandine sauce on top of baby spinach, MEditerranean lemon and macha sauce.'
                     },
                     {
-                        label: 'Salmon',
+                        label: 'Salmon Simone',
                         value: 'salmon',
-                        detail: 'Blackened Salmon served with grilled asparagus on top of a parmesan fake rissoto.',
+                        detail: 'Blackened Salmon on top of creamy risotto, grilled asparagus and touch of green oil.',
                     },
                     {
                         label: 'Grilled Chicken',
                         value: 'organic-chicken',
-                        detail: 'Grilled chicken on top of balsamic cream, served with carrots and cambray potatos.'
+                        detail: 'Sous vide chicken breast bathed in gravy, seed yogurt, baby arugula, cherry tomatoes companied with beet puree.'
                     },
                     {
                         label: 'Rib Eye Tacos',
                         value: 'rib-eye-tacos',
-                        detail: 'Rib Eye tacos served in flour tortilla with melted machego cheese on top creamy green sauce.',
+                        detail: 'Four Rib Eye tacos served in flour tortilla with a manchego cheese crust and a side of green sauce.',
                     },
                     {
                         label: 'Steak and Fries',
                         value: 'steak-and-fries',
-                        detail: 'Rib Eye steak served with truffle fries topped with fried leek',
+                        detail: 'Juicy steak at the term of your choice, sliced with herb butter, served with truffle french fries and baby leek.',
                     },
                     {
                         label: 'Crunchy Shrimps',
                         value: 'shrimps',
-                        detail: 'Tempurizados y bañados en salsa especial de mayo miel, sriracha puestos en cama de lechuga francesa y ajonjoli negro.',
-                        detail: 'Tempurized shrimp bathed in house made chipotle mayo topped with black sesame.',
+                        detail: 'Tempurized shrimp bathed in a special mayo-sriracha sauce, served on top of french lettuce topped with black sesame.',
+                    },
+                    {
+                        label: 'Baja Tacos',
+                        value: 'baja-tacos',
+                        detail: 'Battered fish tacos in flour tortillas served with red onions and avocado.',
                     },
                 ]
             },
@@ -277,7 +310,7 @@ export const englishMealsStates = [
                     {
                         label: 'Super Food Bowl',
                         value: 'super-food-bowl',
-                        detail : 'Quinoa mix, baby spinach, persa cucumber, purple onion served with falafel, avocado and toasted nuts.'
+                        detail : 'Quinoa mix, baby spinach, cucumber, purple onion served with falafel, avocado and toasted nuts.'
                     },
                     {
                         label: 'Poke Bowl',
@@ -287,7 +320,7 @@ export const englishMealsStates = [
                     {
                         label: 'Tex Mex Bowl',
                         value: 'tex-mex-bowl',
-                        detail: 'Arrachera served with rice, corn, tortilla bites, sweet potato topped with guacamole.'
+                        detail: 'Marinated steak served with rice, corn, tortilla bites, sweet potato topped with guacamole.'
                     },
                 ]
             },
@@ -298,17 +331,23 @@ export const englishMealsStates = [
                     {
                         label: 'Classic Cheeseburger',
                         value: 'cheeseburger',
-                        detail: 'Original cheesburger served with truffle fries.',
+                        detail: 'Original cheesburger, red onion, tomato, served with truffle fries.',
                     },
                     {
-                        label: 'Caesar Salad Sandwich',
-                        value: 'ceasar-salad-sandwich',
-                        detail: 'Ciabatta bread sandwich with grilled chicken, parmesan cheese and house made caesar dressing.',
+                        label: 'Bacon Burger',
+                        value: 'bacon-burger',
+                        detail: 'Beef patty with gruyere cheese, lettuce, red onion, tomato companeid with french fries',
                     },
                     {
                         label: 'Grilled Cheese Sandwich',
                         value: 'grilled-cheese-sandwich',
-                        detail: 'Sourdough bread stuffed with cheedar cheese, manchego cheese, grouyere cheese, served with tomato soup to chop.',
+                        detail: 'Sourdough bread stuffed with cheedar cheese, manchego cheese, gruyere cheese, served with tomato soup to chop.',
+
+                    },
+                    {
+                        label: 'Tuna Melt',
+                        value: 'tuna-metl',
+                        detail: 'Brioche bread with seasoned with special house made chipotle mayo recipe, onion, cilantro, mint, tomato, melted cheddar cheese, and avocado.',
 
                     },
                 ]
@@ -326,7 +365,7 @@ export const englishMealsStates = [
                     {
                         label: 'Grilled Cheese Sandwich',
                         value: 'grilled-cheese-sandwich',
-                        detail: 'Sourdough bread stuffed with cheedar cheese, manchego cheese, grouyere cheese, served with tomato soup to chop.',
+                        detail: 'Sourdough bread stuffed with cheedar cheese, manchego cheese, gruyere cheese, served with tomato soup to chop.',
                     },
                     {
                         label: 'French Toast',
@@ -354,7 +393,7 @@ export const englishMealsStates = [
                     {
                         label: 'Churros',
                         value: 'churros',
-                        detail: 'Home made churros acompanied with nutella and caramel spread.'
+                        detail: 'Home made churros companied with nutella and caramel spread.'
                     },
                     {
                         label: 'Lemon Pie',
@@ -369,7 +408,7 @@ export const englishMealsStates = [
                     {
                         label: 'Apple Strudel',
                         value: 'strudel',
-                        detail: 'Apple strudel acompanied with vanilla ice cream.'
+                        detail: 'Apple strudel companied with vanilla ice cream.'
                     },
                 ]
             }
