@@ -5,17 +5,21 @@ import Menu from './pages/Menu';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
+import Login from './pages/Login';
 
 function App() {
+  const isLoginRoute = window.location.pathname === '/admin/login';
+
   return (
     <BrowserRouter>
       <div>
-        <Header /> 
+      {!isLoginRoute && <Header /> }
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/menu" element={<Menu />} />
           <Route exact path="/aboutus" element={<AboutUs />} />
           <Route exact path="/contact" element={<Contact />} />
+          <Route exact path="/admin/login" element={<Login />} />
         </Routes>
       </div>
     </BrowserRouter>
