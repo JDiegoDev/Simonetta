@@ -28,4 +28,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.login-button-container {
+    margin-top: 25px;
+    padding: 0 15px;
+    width: 250px;
+    height: 60px;
+    border-radius: 2px;
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #fff4f2;
+    background-color: #fff4f2;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit;
 }
