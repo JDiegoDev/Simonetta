@@ -12,7 +12,7 @@ const Header = () => {
         menu: pathname === '/menu' ? true : false,
         aboutus: pathname === '/aboutus' ? true : false,
         contact: pathname === '/contact' ? true : false,
-        reservations: pathname === '/reservations' ? true : false,
+        reservations: pathname === '/reservaciones' ? true : false,
     };
 
     const styles = classNames('header-list__menu-list', { 'header-list__menu-list--responsive': showList });
