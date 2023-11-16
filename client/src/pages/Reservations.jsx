@@ -4,8 +4,6 @@ import Image10 from '../images/image10.jpg';
 import Image8 from '../images/image8.jpg';
 
 const Reservations = ()  => {
-    const script = document.createElement("script");
-
     useEffect(() => {
         const container = document.getElementById('open-table-container');
         const script = document.createElement('script');
@@ -14,7 +12,7 @@ const Reservations = ()  => {
         container.appendChild(script);
 
         return () => {
-            document.getElementById('open-table-container').removeChild(script);
+            container.removeChild(script);
         }
     },[]);
 
