@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
+import Reservations from './pages/Reservations';
 
 function App() {
   const PageLayout = () => (
@@ -24,6 +25,7 @@ function App() {
             <Route exact path="/menu" element={<Menu />} />
             <Route exact path="/aboutus" element={<AboutUs />} />
             <Route exact path="/contact" element={<Contact />} />
+            <Route exact path="/reservaciones" element={<Reservations />} />
           </Route>
           <Route exact path="/admin/login" element={<Login />} />
           <Route path="*" element={<h1>Page not Found!</h1>} />

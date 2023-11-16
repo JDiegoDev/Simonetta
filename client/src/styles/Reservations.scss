@@ -1,0 +1,61 @@
+.reservations-container {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    height: calc(100vh - 100px);
+
+    font-weight: 400;
+    font-family: 'Bitter', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    overflow-y: hidden;
+    background-color: #fff4f2;
+}
+
+.reservations-img-panel {
+    width: 33%;
+    height: 100%;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.reservations-open-table-panel {
+    width: 34%;
+    height: 100%;
+    border: 1px solid #fff4f2;
+    background-color: #faf1f0;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .reservations-container {
+        flex-direction: column;
+    }
+
+    .reservations-open-table-panel {
+        height: 34%;
+    }
+
+    .reservations-img-panel {
+        width: 100%;
+        height: 33%;
+        align-items: flex-start;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
