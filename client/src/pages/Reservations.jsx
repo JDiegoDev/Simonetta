@@ -5,9 +5,6 @@ import Image8 from '../images/image8.jpg';
 
 const Reservations = ()  => {
     const script = document.createElement("script");
-    script.type = 'text/javascript';
-    script.src = "https://www.opentable.com.mx/widget/reservation/loader?rid=1336150&type=standard&theme=tall&color=1&dark=false&iframe=false&domain=commx&lang=es-MX&newtab=false&ot_source=Restaurant%20website&cfe=true";
-    script.async = true;
 
     useEffect(() => {
         const container = document.getElementById('open-table-container');
