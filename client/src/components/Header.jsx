@@ -11,7 +11,8 @@ const Header = () => {
         home: pathname === '/' ? true : false,
         menu: pathname === '/menu' ? true : false,
         aboutus: pathname === '/aboutus' ? true : false,
-        contact: pathname === '/contact' ? true : false
+        contact: pathname === '/contact' ? true : false,
+        reservations: pathname === '/reservations' ? true : false,
     };
 
     const styles = classNames('header-list__menu-list', { 'header-list__menu-list--responsive': showList });
@@ -31,6 +32,7 @@ const Header = () => {
                             <Link to="/menu" className={classNames({'header-list__option-isActive': optionActive.menu })}>Menú</Link>
                             <Link to="/aboutus" className={classNames({'header-list__option-isActive': optionActive.aboutus })}>Nosotros</Link>
                             <Link to="/contact" className={classNames({'header-list__option-isActive': optionActive.contact })}>Contacto</Link>
+                            <Link to="/reservaciones" className={classNames({'header-list__option-isActive': optionActive.reservations })}>Reservas</Link>
                         </ul>
                     </div>
                     <div className="header-container__icon" onClick={() => setShowList(!showList)}>
