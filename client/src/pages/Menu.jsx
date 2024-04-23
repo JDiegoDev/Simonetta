@@ -20,7 +20,7 @@ const Menu = () => {
                         <h1>Desayunos</h1>
                         <a
                             alt='breakfast-preview'
-                            href="https://www.simonettabistro.com/files/menu/desayunos.pdf"
+                            href="https://www.simonettabistro.com/files/menu/desayunos-v2.pdf"
                         >
                             <img src={breakFastPreview}></img>
                         </a>
@@ -29,7 +29,7 @@ const Menu = () => {
                         <h1>Comidas & Cenas</h1>
                         <a
                             alt='lunch-preview'
-                            href="https://www.simonettabistro.com/files/menu/comidas.pdf"
+                            href="https://www.simonettabistro.com/files/menu/comidas-v2.pdf"
                         >
                          <img src={lunchPreview}></img>
                         </a>
