@@ -27,7 +27,7 @@ function App() {
             <Route exact path="/contact" element={<Contact />} />
             <Route exact path="/reservaciones" element={<Reservations />} />
           </Route>
-          <Route exact path="/admin/login" element={<Login />} />
+          <Route exact path="/admin/login" element={<Login/>} />
           <Route path="*" element={<h1>Page not Found!</h1>} />
         </Routes>
       </div>
