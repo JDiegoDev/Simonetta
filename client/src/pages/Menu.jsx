@@ -16,7 +16,7 @@ const Menu = () => {
                 <ToggleButton label="English" toggled={false} onClick={logState} />
                 </div> */}
                 <div className='menu__container-options'>
-                    <div className='menu__image-container'>
+                    {/* <div className='menu__image-container'>
                         <h1>Desayunos</h1>
                         <a
                             alt='breakfast-preview'
@@ -33,7 +33,8 @@ const Menu = () => {
                         >
                          <img src={lunchPreview}></img>
                         </a>
-                    </div>
+                    </div> */}
+                    PAGINA NO DISPONIBLE POR LOS MOMENTOS.
                 </div>
             </div>      
         </div>
