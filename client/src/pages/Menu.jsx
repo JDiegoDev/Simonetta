@@ -34,7 +34,7 @@ const Menu = () => {
                          <img src={lunchPreview}></img>
                         </a>
                     </div> */}
-                    PAGINA NO DISPONIBLE POR LOS MOMENTOS.
+                    PAGINA NO DISPONIBLE POR EL MOMENTO.
                 </div>
             </div>      
         </div>
