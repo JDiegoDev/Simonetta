@@ -1,44 +1,57 @@
-import { useState } from 'react';
 import '../styles/Menu.scss';
-import ToggleButton from '../components/common/ToggleButton';
-import breakFastPreview from '../images/desayuno-preview.jpg';
-import lunchPreview from '../images/comidas-preview.jpg';
+import image1 from '../images/image1.png';
+import image2 from '../images/image2.png';
+import image3 from '../images/image3.png';
+import image4 from '../images/image4.png';
+import image5 from '../images/image5.png';
+import image6 from '../images/image6.jpg';
+
+const breakfastMenu = [
+    { label: 'Dulce', image: image1, href: '/files/menu/desayunos-v2.pdf' },
+    { label: 'Salado', image: image2, href: '/files/menu/desayunos-v2.pdf' },
+    { label: 'Saludable', image: image3, href: '/files/menu/desayunos-v2.pdf' },
+    { label: 'Especialidades\nde la casa', image: image4, href: '/files/menu/desayunos-v2.pdf' },
+    { label: 'Café y pan', image: image5, href: '/files/menu/desayunos-v2.pdf' },
+    { label: 'Postres', image: image6, href: '/files/menu/desayunos-v2.pdf' },
+];
+
+const lunchMenu = [
+    { label: 'Entradas', image: image1, href: '/files/menu/comidas-v2.pdf' },
+    { label: 'Sopas', image: image2, href: '/files/menu/comidas-v2.pdf' },
+    { label: 'Pastas', image: image6, href: '/files/menu/comidas-v2.pdf' },
+    { label: 'Ensaladas y\nbowls', image: image3, href: '/files/menu/comidas-v2.pdf' },
+    { label: 'Fuertes', image: image4, href: '/files/menu/comidas-v2.pdf' },
+    { label: 'Coctelería', image: image5, href: '/files/menu/comidas-v2.pdf' },
+];
 
 const Menu = () => {
-    const [ isEnglishMenu , setIsEnglishMenu ] =  useState(false);
-    const logState = (state) => setIsEnglishMenu(state);
-
-
     return (
-        <div className='menu'>
-            <div className='menu__container'>
-                {/* <div className='menu__container-language'>
-                <ToggleButton label="English" toggled={false} onClick={logState} />
-                </div> */}
-                <div className='menu__container-options'>
-                    {/* <div className='menu__image-container'>
-                        <h1>Desayunos</h1>
-                        <a
-                            alt='breakfast-preview'
-                            href="https://www.simonettabistro.com/files/menu/desayunos-v2.pdf"
-                        >
-                            <img src={breakFastPreview}></img>
+        <main className='menu-page'>
+            <section className='menu-page__section'>
+                <h2 className='menu-page__title'>Desayunos &amp; brunch</h2>
+                <div className='menu-page__grid'>
+                    {breakfastMenu.map(({ label, image, href }) => (
+                        <a key={label} href={href} target='_blank' rel='noreferrer' className='menu-page__item'>
+                            <img src={image} alt={label} />
+                            <span>{label}</span>
                         </a>
-                    </div>
-                    <div className='menu__image-container'>
-                        <h1>Comidas & Cenas</h1>
-                        <a
-                            alt='lunch-preview'
-                            href="https://www.simonettabistro.com/files/menu/comidas-v2.pdf"
-                        >
-                         <img src={lunchPreview}></img>
-                        </a>
-                    </div> */}
-                    PAGINA NO DISPONIBLE POR EL MOMENTO.
+                    ))}
                 </div>
-            </div>      
-        </div>
+            </section>
+
+            <section className='menu-page__section menu-page__section--second'>
+                <h2 className='menu-page__title'>Comidas y cenas</h2>
+                <div className='menu-page__grid'>
+                    {lunchMenu.map(({ label, image, href }) => (
+                        <a key={label} href={href} target='_blank' rel='noreferrer' className='menu-page__item'>
+                            <img src={image} alt={label} />
+                            <span>{label}</span>
+                        </a>
+                    ))}
+                </div>
+            </section>
+        </main>
     );
-}
+};
 
 export default Menu;

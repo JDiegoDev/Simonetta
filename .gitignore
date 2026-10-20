@@ -1,2 +1,8 @@
 node_modules
 package-lock.json
+.DS_Store
+**/.DS_Store
+.design_pages/
+"Rediseño Página Web 2026_*.pdf"
+github_key
+github_key.pub

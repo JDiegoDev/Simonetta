@@ -1,47 +1,73 @@
 import '../styles/Header.scss';
-import classNames from "classnames";
-import SimonettaLogo from '../images/logorect.png';
-import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import classNames from 'classnames';
+import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
-    const [ showList, setShowList ] = useState(false);
+    const [showList, setShowList] = useState(false);
     const { pathname } = useLocation();
+
     const optionActive = {
-        home: pathname === '/' ? true : false,
-        menu: pathname === '/menu' ? true : false,
-        aboutus: pathname === '/aboutus' ? true : false,
-        contact: pathname === '/contact' ? true : false,
-        reservations: pathname === '/reservaciones' ? true : false,
+        home: pathname === '/',
+        menu: pathname === '/menu',
+        aboutus: pathname === '/aboutus',
+        contact: pathname === '/contact',
+        reservations: pathname === '/reservaciones',
     };
 
-    const styles = classNames('header-list__menu-list', { 'header-list__menu-list--responsive': showList });
+    const styles = classNames('header-list__menu-list', {
+        'header-list__menu-list--responsive': showList,
+    });
+
+    const navItems = [
+        { to: '/', label: 'Inicio', active: optionActive.home },
+        { to: '/menu', label: 'Menú', active: optionActive.menu },
+        { to: '/aboutus', label: 'Nosotros', active: optionActive.aboutus },
+        { to: '/contact', label: 'Contacto', active: optionActive.contact },
+        { to: '/reservaciones', label: 'Reservas', active: optionActive.reservations },
+    ];
 
     return (
-        <div className="header">
-            <div className="header__header-container">
+        <header className='header'>
+            <div className='header__header-container'>
                 <div className='header-logo'>
-                        <Link to='/'>
-                            <img src={SimonettaLogo} alt='Simonetta-Logo' className='header__logo-image'></img>
-                        </Link>
+                    <Link to='/' aria-label='Ir al inicio'>
+                        <span className='header-logo__wordmark'>SIMONETTA</span>
+                    </Link>
                 </div>
+
                 <div className='header-list-container'>
-                    <div className={styles}>
+                    <nav className={styles} aria-label='Navegación principal'>
                         <ul onClick={() => setShowList(false)}>
-                            <Link to="/" className={classNames({'header-list__option-isActive': optionActive.home })}>Inicio</Link>
-                            <Link to="/menu" className={classNames({'header-list__option-isActive': optionActive.menu })}>Menú</Link>
-                            <Link to="/aboutus" className={classNames({'header-list__option-isActive': optionActive.aboutus })}>Nosotros</Link>
-                            <Link to="/contact" className={classNames({'header-list__option-isActive': optionActive.contact })}>Contacto</Link>
-                            <Link to="/reservaciones" className={classNames({'header-list__option-isActive': optionActive.reservations })}>Reservas</Link>
+                            {navItems.map(({ to, label, active }) => (
+                                <li key={to}>
+                                    <Link
+                                        to={to}
+                                        className={classNames({
+                                            'header-list__option-isActive': active,
+                                        })}
+                                    >
+                                        {label}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
-                    </div>
-                    <div className="header-container__icon" onClick={() => setShowList(!showList)}>
-                        <i className="fa fa-bars"></i>
-                    </div>
+                    </nav>
+
+                    <button
+                        type='button'
+                        className='header-container__icon'
+                        aria-label='Abrir menú'
+                        onClick={() => setShowList(!showList)}
+                    >
+                        <span />
+                        <span />
+                        <span />
+                    </button>
                 </div>
             </div>
-        </div>
+        </header>
     );
-}
+};
 
 export default Header;
