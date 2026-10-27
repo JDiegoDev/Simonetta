@@ -1,6 +1,8 @@
 //#fff4f2
 //#F8C1B7
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +14,7 @@ html {
     /* Precentage of the user's browser font-size setting */
     font-size: 62.5%;
     overflow-x: hidden;
-    font-family: 'Bitter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
 }
 
@@ -22,4 +24,5 @@ body {
     line-height: 1;
     font-weight: 400;
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
 }

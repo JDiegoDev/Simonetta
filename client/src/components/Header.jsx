@@ -2,6 +2,7 @@ import '../styles/Header.scss';
 import classNames from 'classnames';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import logoNegro from '../images/Copy of logo-negro.png';
 
 const Header = () => {
     const [showList, setShowList] = useState(false);
@@ -12,6 +13,7 @@ const Header = () => {
         menu: pathname === '/menu',
         aboutus: pathname === '/aboutus',
         contact: pathname === '/contact',
+        catering: pathname === '/catering',
         reservations: pathname === '/reservaciones',
     };
 
@@ -24,6 +26,7 @@ const Header = () => {
         { to: '/menu', label: 'Menú', active: optionActive.menu },
         { to: '/aboutus', label: 'Nosotros', active: optionActive.aboutus },
         { to: '/contact', label: 'Contacto', active: optionActive.contact },
+        { to: '/catering', label: 'Catering', active: optionActive.catering },
         { to: '/reservaciones', label: 'Reservas', active: optionActive.reservations },
     ];
 
@@ -32,7 +35,7 @@ const Header = () => {
             <div className='header__header-container'>
                 <div className='header-logo'>
                     <Link to='/' aria-label='Ir al inicio'>
-                        <span className='header-logo__wordmark'>SIMONETTA</span>
+                        <img src={logoNegro} alt='Simonetta logo' className='header-logo__image' />
                     </Link>
                 </div>
 

@@ -5,6 +5,7 @@ import Menu from './pages/Menu';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
+import Catering from './pages/Catering';
 import Login from './pages/Login';
 import Reservations from './pages/Reservations';
 
@@ -25,6 +26,7 @@ function App() {
             <Route exact path="/menu" element={<Menu />} />
             <Route exact path="/aboutus" element={<AboutUs />} />
             <Route exact path="/contact" element={<Contact />} />
+            <Route exact path="/catering" element={<Catering />} />
             <Route exact path="/reservaciones" element={<Reservations />} />
           </Route>
           <Route exact path="/admin/login" element={<Login/>} />

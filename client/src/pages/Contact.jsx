@@ -1,4 +1,4 @@
-import image from '../images/image6.jpg';
+import image from '../images/Contacto.jpg';
 import '../styles/Contact.scss';
 
 const Contact = () => {
@@ -6,38 +6,41 @@ const Contact = () => {
         <main className='contact'>
             <div className='contact__container'>
                 <div className='contact__image-container'>
-                    <img src={image} alt='Simonetta Bistro exterior' />
+                    <img src={image} alt='Simonetta Bistro cocktail' />
                 </div>
 
                 <div className='contact__info-container'>
-                    <div className='contact__header'>
-                        <p className='contact__eyebrow'>Contacto</p>
-                        <h1 className='contact__title'>Nos encantaría verte.</h1>
-                    </div>
+                    <h1 className='contact__title'>Contacto</h1>
+                    <div className='contact__divider' />
 
-                    <div className='contact__address'>
+                    <div className='contact__row'>
+                        <span className='contact__icon contact__icon--pin'>•</span>
                         <a href='https://goo.gl/maps/Aey42uuYbAAnSeFY7' target='_blank' rel='noreferrer'>
-                            H, Virgilio 9, Polanco, Miguel Hidalgo, 11550 Ciudad de México
+                            Virgilio 9, Polanco, III sección, Miguel Hidalgo, Ciudad de México
                         </a>
                     </div>
 
-                    <div className='contact__hours'>
-                        <div className='contact__hours-title'>Horario</div>
-                        <div className='contact__hours-dates'>
-                            <p>8:30 AM - 10:00 PM | Lun - Mar - Mier</p>
-                            <p>8:30 AM - 12:00 PM | Jue - Vie - Sab</p>
-                            <p>8:30 AM - 7:00 PM | Dom</p>
+                    <div className='contact__row'>
+                        <span className='contact__icon contact__icon--clock'>◔</span>
+                        <div className='contact__hours'>
+                            <p>8:30 a.m. - 10:00 p.m | Lunes a miércoles</p>
+                            <p>8:30 a.m. - 11:00 p.m | Jueves a sábado</p>
+                            <p>9:00 a.m. - 7:00 p.m | Domingo</p>
                         </div>
                     </div>
 
-                    <div className='contact__form'>
-                        <form action='mailto:contacto@simonettabistro.com'>
-                            <input type='text' name='subject' placeholder='Asunto' />
-                            <textarea name='body' placeholder='Mensaje' rows='5' />
-                            <div className='contact__form-button'>
-                                <input type='submit' value='Enviar' />
-                            </div>
-                        </form>
+                    <div className='contact__row'>
+                        <span className='contact__icon contact__icon--insta'>◌</span>
+                        <a href='https://www.instagram.com/' target='_blank' rel='noreferrer'>
+                            @simonettabistromx
+                        </a>
+                    </div>
+
+                    <div className='contact__row'>
+                        <span className='contact__icon contact__icon--mail'>✉</span>
+                        <a href='mailto:gerencia@simonettabistro.com'>
+                            gerencia@simonettabistro.com
+                        </a>
                     </div>
                 </div>
             </div>

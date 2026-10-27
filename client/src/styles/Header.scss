@@ -21,17 +21,18 @@
         align-items: center;
 
         a {
+            display: inline-flex;
+            align-items: center;
             color: #2b201d;
             text-decoration: none;
         }
     }
 
-    &-logo__wordmark {
-        font-size: 2.4rem;
-        letter-spacing: 0.4rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: #2e201d;
+    &-logo__image {
+        display: block;
+        height: 90px;
+        width: auto;
+        object-fit: contain;
     }
 
     &-list-container {

@@ -20,8 +20,8 @@
         letter-spacing: -0.07em;
         font-weight: 400;
         color: #a75b2d;
-        font-style: italic;
-        font-family: Georgia, 'Times New Roman', serif;
+        font-style: normal;
+        font-family: 'Poppins', sans-serif;
     }
 
     &__grid {
@@ -55,7 +55,7 @@
             font-size: clamp(2.1rem, 2.2vw, 3rem);
             line-height: 1.1;
             font-weight: 400;
-            font-family: Georgia, 'Times New Roman', serif;
+            font-family: 'Poppins', sans-serif;
             white-space: pre-line;
         }
     }

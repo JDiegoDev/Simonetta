@@ -1,5 +1,5 @@
 import '../styles/AboutUs.scss';
-import image from '../images/image5.png';
+import image from '../images/Nosotros.jpg';
 
 const AboutUs = () => {
     return (
@@ -10,18 +10,14 @@ const AboutUs = () => {
                 </div>
 
                 <div className='about-us__legend-container'>
-                    <p className='about-us__eyebrow'>Nosotros</p>
-                    <h1 className='about-us__title'>Un bistro con identidad propia.</h1>
+                    <h1 className='about-us__title'>Nosotros</h1>
                     <div className='about-us__description'>
                         <p>
-                            En el corazón de Polanco, <span>Simonetta Bistro</span> nació para
-                            acompañar cada momento del día con buena comida, un ambiente cálido y
-                            una atención cercana.
-                        </p>
-                        <p>
-                            Nuestra cocina combina ingredientes de temporada, técnica y un toque
-                            creativo para ofrecer platillos que celebran el sabor auténtico sin
-                            perder la elegancia.
+                            Ubicado en el corazón de Polanco, <span>Simonetta Bistro</span> es el
+                            destino ideal para disfrutar de los mejores platillos del momento a
+                            cualquier hora del día. El menú se basa en ingredientes de temporada y
+                            presenta una cocina de autor refinada y platos dinámicos para elevar la
+                            experiencia gastronómica de los comensales.
                         </p>
                     </div>
                 </div>
