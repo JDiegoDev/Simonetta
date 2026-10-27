@@ -12,22 +12,24 @@ import ensaladasBowls from '../images/Ensaladas y bowls.jpg';
 import fuertes from '../images/Fuertes.jpg';
 import cocteleria from '../images/Coctelería.jpg';
 
+const pdfUrl = '/files/menu/MENU-2026.pdf';
+
 const breakfastMenu = [
-    { label: 'Dulce', image: dulce, href: '/files/menu/desayunos-v2.pdf' },
-    { label: 'Salado', image: salado, href: '/files/menu/desayunos-v2.pdf' },
-    { label: 'Saludable', image: saludable, href: '/files/menu/desayunos-v2.pdf' },
-    { label: 'Especialidades\nde la casa', image: especialidades, href: '/files/menu/desayunos-v2.pdf' },
-    { label: 'Café y pan', image: cafeYPan, href: '/files/menu/desayunos-v2.pdf' },
-    { label: 'Postres', image: postres, href: '/files/menu/desayunos-v2.pdf' },
+    { label: 'Dulce', image: dulce, href: pdfUrl },
+    { label: 'Salado', image: salado, href: pdfUrl },
+    { label: 'Saludable', image: saludable, href: pdfUrl },
+    { label: 'Especialidades\nde la casa', image: especialidades, href: pdfUrl },
+    { label: 'Café y pan', image: cafeYPan, href: pdfUrl },
+    { label: 'Postres', image: postres, href: pdfUrl },
 ];
 
 const lunchMenu = [
-    { label: 'Entradas', image: entradas, href: '/files/menu/comidas-v2.pdf' },
-    { label: 'Sopas', image: sopas, href: '/files/menu/comidas-v2.pdf' },
-    { label: 'Pastas', image: pastas, href: '/files/menu/comidas-v2.pdf' },
-    { label: 'Ensaladas y\nbowls', image: ensaladasBowls, href: '/files/menu/comidas-v2.pdf' },
-    { label: 'Fuertes', image: fuertes, href: '/files/menu/comidas-v2.pdf' },
-    { label: 'Coctelería', image: cocteleria, href: '/files/menu/comidas-v2.pdf' },
+    { label: 'Entradas', image: entradas, href: pdfUrl },
+    { label: 'Sopas', image: sopas, href: pdfUrl },
+    { label: 'Pastas', image: pastas, href: pdfUrl },
+    { label: 'Ensaladas y\nbowls', image: ensaladasBowls, href: pdfUrl },
+    { label: 'Fuertes', image: fuertes, href: pdfUrl },
+    { label: 'Coctelería', image: cocteleria, href: pdfUrl },
 ];
 
 const Menu = () => {
